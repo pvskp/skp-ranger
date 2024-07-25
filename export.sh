@@ -8,7 +8,7 @@ if [ -L "$HOME/.config/ranger" ]; then
  exit 1
 fi
 
-ln -s "$base_dir/" "$HOME/.config/ranger"
+ln -s "$base_dir" "$HOME/.config/ranger"
 if [ $? -ne 0 ]; then
   echo "Error: failed to export ~/.config/ranger/"
   finished_with_errors=1
